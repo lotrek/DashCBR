@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.lautrec.dashcbr"
+        android:versionCode="1"
+        android:versionName="1.0"
+        >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="19"/>
+    <application android:icon="@drawable/icon"
+                 android:label="@string/app_name"
+                 >
+        <service
+                android:name="com.lautrec.dashcbr.DashcbrService"
+                android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA"
+                android:label="@string/app_name"
+                >
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+            <meta-data android:name="protocolVersion" android:value="2" />
+            <meta-data android:name="worldReadable" android:value="true" />
+            <meta-data android:name="description"
+                       android:value="@string/extension_description" />
+            <meta-data android:name="settingsActivity"
+                       android:value=".SettingsActivity" />
+
+                               </service>
+        <activity android:name=".SettingsActivity"
+                  android:label="@string/title_settings"
+                  android:exported="true" />
+    </application>
+</manifest>

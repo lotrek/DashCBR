@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listentries">
+        <item>Доллар США</item>
+        <item>Фунт стерлингов </item>
+        <item>Евро</item>
+    </string-array>
+    <string-array name="listvalues">
+        <item>R01235</item>
+        <item>R01035</item>
+        <item>R01239</item>
+    </string-array>
+</resources>

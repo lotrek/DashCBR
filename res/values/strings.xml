@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DashCBR</string>
+    <string name="extension_description">Курсы валют от Центрального банка РФ</string>
+    <string name="pref_list_default">R01239</string>
+    <string name="title_settings">DashCBR settings</string>
+</resources>
